@@ -1,0 +1,208 @@
+body {
+    background-color:silver;
+}
+.Account{
+    margin-left: 15px;
+    margin-top: 9px;
+    font-weight: bold;
+    font-size: xx-large;
+
+}
+.full {
+    
+    background-color: white ;
+   
+    margin-top: 10px;
+    height: 550px;
+    margin-left: 10px;
+    margin-right: 100px;
+    border-style: groove;
+    
+}
+.sub1{
+    width: 200px;
+    margin-top:20px;
+}
+.MenuItem{
+    font-size: x-large;
+    color: silver;
+    
+    cursor: pointer;
+    border-bottom: 1px solid;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.MenuItem:hover{
+ background-color: yellow;   
+}
+
+.pic{
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+.button1{
+    color: white;
+    background-color: blue;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    
+}
+.button2{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    height: 30px;
+    margin-left: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+
+
+}
+.p{
+    
+    
+    
+    padding-top: 10px;
+}
+
+input[type=text],input[type=date]{
+    height: 30px;
+    width: 800px;
+
+}
+
+input[type=text]:focus{
+    border-color: blue;
+    outline: 0;
+}
+input[type=date]:focus{
+    border-color: blue;
+    outline: 0;
+}
+
+.text1{
+    
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.text2{
+    color: black;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.text3{
+    color: black;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.p1{
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 80px;
+    font-size: revert;
+    background-color: wheat;
+    width: 665px;
+}
+
+
+
+.text4{  
+    color: black;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.button3{
+    color: white;
+    background-color: royalblue;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 900px;
+    margin-top: 30px;
+    cursor: pointer;
+    }
+.button4{
+    color: black;
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+        
+.text5{
+    margin-left: 250px;
+    margin-top: 20px
+
+}        
+.text6{
+    margin-left: 250px;
+    margin-top: 20px
+
+}        
+.text7{
+    margin-left: 250px;
+    margin-top: 20px
+
+}        
+.button5{
+    color: white;
+    background-color: royalblue;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 700px;
+    margin-top: 30px;
+    cursor: pointer;
+    float: left;
+}
+.button6{
+    color: black;
+     background-color:white;
+     width: 150px;
+     height: 40px;
+     border-radius: 5px;
+     margin-left: 30px;
+     margin-top: 30px;
+     cursor: pointer;}
+.birthday{
+    margin-left: 250px;
+    margin-top: 20px
+}
+.Country{
+
+    margin-left: 250px;
+    margin-top: 15px;
+}
+.cont{
+    font-size: xx-large;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.text8{
+    margin-left: 250px;
+    margin-top: 15px;
+
+}
+.text9{
+    margin-left: 250px;
+    margin-top: 15px;
+}
+.check1{
+    margin-left: 250px;
+
+} 
+.check2{
+    margin-left: 250px;
+    margin-top: 15px;
+
+}

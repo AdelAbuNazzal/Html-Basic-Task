@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <title>Account</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript">
+            function Toggle(value){
+                switch(value){
+                    case 'General':
+                    document.getElementById('General').style.display="block";
+                    document.getElementById('Password').style.display="none";
+                    document.getElementById('Info').style.display="none";
+                    document.getElementById('Notification').style.display="none";
+                    break;
+                    case 'Password':
+                    document.getElementById('General').style.display="none";
+                    document.getElementById('Password').style.display=" block";
+                    document.getElementById('Info').style.display="none";
+                    document.getElementById('Notification').style.display="none";
+        
+                    break;
+                    case 'Info':
+                    document.getElementById('General').style.display="none";
+                    document.getElementById('Password').style.display="none";
+                    document.getElementById('Info').style.display="block";
+            document.getElementById('Notification').style.display="none";
+            break;
+            case 'Notification':
+            document.getElementById('General').style.display="none";
+            document.getElementById('Password').style.display="none";
+            document.getElementById('Info').style.display="none";
+            document.getElementById('Notification').style.display="block";
+            break;
+        }
+    }
+    </script>
+        
+ </head>
+ <body>
+    <form>
+    <div class="Account" >
+     <span>Account Setting </span>
+    </div>
+    <div class="full">
+        <div class="sub1" style="float: left;">
+            <div class="MenuItem" onclick="Toggle('General')">
+             <span>General</span>
+            </div>
+        
+            <div class="MenuItem" onclick="Toggle('Password')">
+            <span>Change password</span>
+            </div>
+        
+            <div class="MenuItem" onclick="Toggle('Info')">
+             <span>Info</span>
+            </div>
+        
+            <div class="MenuItem" onclick="Toggle('Notification')">
+             <span>Notifications</span>
+            </div>
+        
+        </div>
+        <div style="float: left; width: 500px;" id="General">
+            
+
+        <div class="pic" style="float: left;">
+          <img src="avatar.png" width="100" height="100">
+        </div>
+        <div style="float: left;">
+        <div style="float: left;">
+            <button class="button1">Upload New Photo</button>
+        </div>  
+        <div style="float: left;">
+            <button class="button2 ">Resrt</button>
+        </div>  
+        <div class="p" style="clear:left">
+            <p style="margin-left: 30px;" >Allowed JPG,GIF or PNG Maxsize of 800K <p>
+        </div> 
+        
+   </div> 
+        <div style="clear: left;">
+
+        <div class="text1">
+            <label>Username</label><br>
+            <input type="text" id="fname">
+        </div> 
+        <div class="text1">
+            <label>Name</label><br>
+            <input type="text" id="lname" size="100px" height="30px">
+        </div>
+        <div class="text1">
+            <label>Email</label><br>
+            <input type="text" id="email" size="100px" height="30px">
+        </div> 
+        <div class="p1">
+            <p> Your Email is not confirmed,Please check your inbox<p>
+                
+                <a href="url">Resend confirmed</a>
+        </div>
+        <div class="text1">
+            <label>Company</label><br>
+            <input type="text" id="Cname" size="100px" height="30px">
+        </div>
+        <div style="float: left;">
+            <button class="button3">Save Change</button>
+        </div> 
+        <div>
+            <button class="button4" style="float: left;">Cancel</button>
+        </div>  
+    </div>   
+</div>             
+  
+  <div style="display: none;" id="Password">
+        <div class="text5">
+            <label>Current password</label><br>
+            <input type="text" id="Changepass" size="100px" height="30px">
+        </div> 
+    <div class="text6">
+            <label>New password</label><br>
+            <input type="text" id="Changepass" size="100px" height="30px">
+    </div> 
+    <div class="text7">
+        <label>Repeat Nwe Password</label><br>
+        <input type="text" id="Changepass" size="100px" height="30px">
+    </div> 
+    <div>
+        <button class="button5">Save Change</button>
+    </div>
+    <div>
+        <button class="button6">Cancel</button>
+    </div>   
+
+   </div>
+  <div style="display: none;" id="Info">
+    <div class="text7">
+    <label> Bio</label><br>
+    <input type="text" id="Changepass" size="100px" height="30px">
+</div>
+<div class="birthday">
+<label for="birthday">Birthday</label><br>
+<input type="date" id="birthday" name="birthday"size="100px" height="30px" width="100px">
+</div>
+<div class="Country">  
+    <label for="Country" >Country</label><br>
+
+    <select name="Country" id="Country" >
+      <option value="Usa">Usa</option>
+      <option value="Turkey">Turkey</option>
+      <option value="Jordan">Jordan</option>
+      <option value="Canada">Canda</option>
+    </select>
+</div>
+<div class="cont">
+    <span>Conacts</span>
+</div>
+<div class="text8">
+        <input type="text" id="phone" size="100px" height="30px" value="phone">
+</div>
+<div class="text9">
+    <input type="text" id="email" size="100px" height="30px" value="email">
+</div>
+<div>
+    <button class="button5">Save Change</button>
+</div>
+<div>
+    <button class="button6">Cancel</button>
+</div>   
+</div>
+
+  <div style="display: none;" id="Notification">
+    <div class="check1">
+        <h1>Activity</h1>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="C1">
+        <label for="vehicle1">Email me when someone comments on my article</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="C2">
+        <label for="vehicle2">Email me when someone answers on my forum thread</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="C3">
+        <label for="vehicle3">Email me when someone follows me</label><br>
+    </div>
+    <div class="check2">
+        <h1>Application</h1>
+        <input type="checkbox" id="vehicle4" name="vehicle4" value="C1">
+        <label for="vehicle4">News and announcements</label><br>
+        <input type="checkbox" id="vehicle5" name="vehicle5" value="C2">
+        <label for="vehicle5">Weekly prouduct update</label><br>
+        <input type="checkbox" id="vehicle6" name="vehicle6" value="C3">
+        <label for="vehicle6">Weekly blog digest</label><br>
+    </div>
+    <div>
+        <button class="button5">Save Change</button>
+    </div>
+    </div>  
+</div>  
+</form>
+ </body>
+</html>
