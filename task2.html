@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <title>Profile</title>
+        <link href="task2.css" type="text/css" rel="stylesheet"/>
+  
+  <script type="text/javascript">
+    function Toggle(value){
+        switch(value){
+            case 'ABOUT ME':
+            document.getElementById('ABOUT ME').style.display="block";
+            document.getElementById('PROJECT').style.display="none";
+            document.getElementById('SETTING').style.display="none";
+           
+            break;
+            case 'PROJECT':
+            document.getElementById('ABOUT ME').style.display="none";
+            document.getElementById('PROJECT').style.display=" block";
+            document.getElementById('SETTING').style.display="none";
+            
+
+            break;
+            case 'SETTING':
+            document.getElementById('ABOUT ME').style.display="none";
+            document.getElementById('PROJECT').style.display="none";
+            document.getElementById('SETTING').style.display="block";
+    
+            break;
+        }
+    }
+</script>
+</head>
+  <body>
+      <div>
+   <div class="top1">
+       <div class="pic">
+           <image src="avatar7.png" style="background-color: white;width:250px;height:250px;border-radius: 50%;border-style:solid;border-color: white;" >
+           </div>
+        <div class="text1">
+            <span>John Deon</span>
+        </div>    
+   </div>
+   <div class="bar">
+
+    <div class="MenuItem" onclick="Toggle('ABOUT ME')" style="float: left;">
+    <span>ABOUT ME</span>
+    </div>
+   
+        <div class="MenuItem" onclick="Toggle('PROJECT')" style="float: left;">
+    <span>PROJECT</span>
+        </div>   
+    
+        <div class="MenuItem" onclick="Toggle('SETTING')" style="float: left;">
+            <span>SETTING</span>
+    </div>
+</div>
+      </div>
+    <div  id="ABOUT ME">
+        <div style="float: left;">
+        <div class="left1">
+        <div class="PI" >
+            <span>Personal Information</span>
+        </div>
+        <div  class="menu">
+        <div class="menu2">
+            <span>Full Name</span>
+        </div>
+        <div class="text3">
+            <span>Johnathoandeon</span>
+            </div>
+        <div class="menu2">
+         <span>Mobile</span>
+        </div> 
+        <div class="text3">
+            <span>(123) 123 1234</span>
+
+        </div>
+        <div class="menu2">
+            <span>Email</span>
+            </div>
+            <div class="text3" >
+                <span>Johnathoandeon@moltren.com</span>
+
+            </div>
+            <div class="menu2">
+                <span>Loction</span>
+            </div>
+            <div class="text3" >
+                <span>USA</span>
+            </div>
+        </div>
+        </div>
+        <div class="left2" style="float: left;">
+            <div class="PI">
+                <Span>LANGUAGES</span>
+             </div>
+             <div class="text3">
+                <ul>
+                    <li>English</li>
+                    <li>Franch</li>
+                    <li>Greek</li>
+                </ul>
+             </div>
+            </div>
+        </div>
+        
+        <div class="div1" style="float: left;">
+            <div class="menuhead">
+                <span>BIOGRAPHY</span>
+            </div>
+            <div class="menu3">
+                <span>
+                    Lorem Ipsum is semply dummy text of the printing and typesetting industry.Lorem ipsum has been the industry standard dummy text 
+                    ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book . It has survived 
+                    not only five centuries , but also the leap into electronic typesetting , remaining essentially unchanged . 
+                    <div class="menu5">
+                    But also the leap into electronic typesetting , remaining essentially unchanged .
+                    </div> 
+                    It was popularised in the 1960s with the release of letraset sheets containing lorem ipsum passages , and more recently with desktop
+                      publishing software like aldus pagemaker including versions of lorem ipsum
+                    </span>
+                </div>
+        </div>
+       
+        <div class="div2" style="float: left;">
+            <div class="menuhead">
+                <span>SKILLS</span>
+                </div>
+                <div class="line1">
+                <div class="menu3"  style="float: left;">
+                    <span> Angular js</span>
+                </div>
+                <div class="menu4">
+                    <span>60%</span>
+                </div>
+                </div>
+                <div class="line1">
+                <div class="menu3"  style="float: left">
+                    <span> javascript</span>
+                </div>
+                <div class="menu4">
+                    <span>90%</span>
+                </div>
+                </div>
+                <div class="line1">
+                <div class="menu3"  style="clear: left;float: left;">
+                    <span>Wordpress</span>
+                </div>
+                <div class="menu4">
+                    <span>80%</span>
+                </div>
+                </div>
+                <div class="line1">
+                <div class="menu3"  style="clear: left;float: left;">
+                    <span>Html5 & CSS3</span>
+                </div>
+                <div class="menu4">
+                    <span>95%</span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+<div style="display: none;" id="PROJECT">
+    <div class="mypro">
+        <span>MY PROJECTS</span>
+    </div>
+    <div class="mypro1">
+        <table class="table1">
+            <tr>
+              <th>#</th>
+              <th>Project Name</th>
+              <th>Start Date</th>
+              <th>Due Date</th>
+              <th>Assign</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Moltren Admin</td>
+              <td>01/01/2015 </td>
+              <td>07/05/2015</td>
+              <td>Coderthems</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Moltren Frontend</td>
+                <td>01/01/2015</td>
+                <td>07/05/2015</td>
+                <td>Coderthems</td>
+            </tr>
+              <tr>
+                <td>3</td>
+                <td>Moltren Admin</td>
+                <td>01/01/2015</td>
+                <td>07/05/2015</td>
+                <td>Coderthems</td>
+          </table>
+          
+    </div>
+</div>
+
+    <div style="display: none;" id="SETTING" >
+        <div class="mypro">
+            <span>EDIT PROFILE</span>
+        </div>
+        <div class="sittbig" >
+            <div class="sitt">
+                    <label>Name</label><br>
+                    <input type="text">
+            </div>
+            <div class="sitt">
+                <label>Email</label><br>
+                <input type="text">
+           </div>
+           <div class="sitt">
+            <label>UserName</label><br>
+            <input type="text">
+           </div>
+         <div class="sitt">
+        <label>Password</label><br>
+        <input type="text">
+        </div>
+        <div class="sitt">
+            <label>Re-Password</label><br>
+            <input type="text">
+       </div>
+       <div class="sitt" >
+        <label>About me</label><br>
+        <input type="text" style="height: 70px;">
+       </div> 
+       <div>
+        <button class="button"">Save Change</button>
+       </div>
+        </div>
+
+</div>
+  </body>
+  </html>
